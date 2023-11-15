@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <audio id="audio" src="mario.mp3"></audio>
+    <audio id="startAudio" src="start.mp3"></audio>
+    <audio id="coin" src="coin.mp3"></audio>
+    <audio id="gameOverAudio" src="gameOver.mp3"></audio>
+    <div class="container">
+        <div class="score"><img src="score.png"><span class="counter"></span></div>
+        <div class="gameScreen">
+            <div class="greyScreen"> cliquez pour lancer le jeu</div>
+            <div class="titleScreen">
+                <img class="title" src="title.png">
+                <img class="marioFace" src="mario-face.svg">
+                <div class="play">Jouer !</div>
+            </div>
+            <div class="gameOverScreen">
+                <div class="finalScore"></div>
+                <div class="evaluation"></div>
+                <div class="replay">Rejouer !</div>
+            
+        </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

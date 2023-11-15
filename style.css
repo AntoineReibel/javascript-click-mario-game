@@ -1,0 +1,123 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@font-face {
+  font-family: 'SuperMario256';
+  src: url('SuperMario256.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SuperMario256';
+    letter-spacing: 1px;
+  }
+
+  .gameScreen{
+    width: 900px;
+    height: 600px;
+    background-color: beige;
+    position: relative;
+    overflow: hidden;
+    cursor: url(star.png) 24 24, auto;
+
+  }
+  
+  .target {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+  
+  }
+
+  .titleScreen, .gameOverScreen {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+  }
+
+  .gameOverScreen{
+    display: none;
+  }
+
+  .marioFace{
+    width: 15rem;
+    height: auto;
+    transform: scale(0);
+
+  }
+
+  .play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 10rem;
+    font-size: x-large;
+    color: #fff;
+    background-color: #e60012;
+    border: 2px solid black;
+    border-radius: 50px;
+  }
+
+  .score{
+    opacity: 0;
+  }
+
+  .counter {
+    font-size: 55px;
+    font-weight: bold;
+    color: #e60012;
+    margin-left: 7px;
+
+  }
+
+  .finalScore {
+    font-size: 55px;
+    font-weight: bold;
+    color: #42b032;
+    margin-left: 7px;
+    transform: scale(0);
+  }
+
+  .evaluation {
+    font-size: 55px;
+    font-weight: bold;
+    color: #009ddb;
+    margin-left: 7px;
+    transform: scale(0);
+  }
+
+  .replay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 10rem;
+    font-size: x-large;
+    color: #fff;
+    background-color: #e60012;
+    border: 2px solid black;
+    border-radius: 50px;
+    transform: scale(0);
+  }
+
+  .greyScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: gray;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
